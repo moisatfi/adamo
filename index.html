@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دار الكتاب المبين - فرع الشيخ رشيد الحجار</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:wght@400;700&family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --gd:#0d3320;--gm:#155a35;--gl:#1e7a48;--gp:#e8f5ee;
+  --gold:#c9913a;--goldl:#f0d080;
+  --cream:#faf7f0;--creamd:#f0ebe0;
+  --td:#1a1a14;--tm:#3d3d30;--ts:#6b6b55;--brd:#ddd6c4;
+  --wh:#ffffff;--sh:0 4px 20px rgba(13,51,32,.10);--shl:0 12px 40px rgba(13,51,32,.15);
+  --bd:#0f3460;--bl:#e8f0fb;
+  --red:#c0392b;--redl:#fdecea;
+  --amber:#b07d1a;--amberl:#fef9ec;
+  --emerald:#155a35;--emeraldl:#e8f5ee;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Cairo',sans-serif;background:var(--cream);color:var(--td);min-height:100vh;direction:rtl;}
+
+/* ── HEADER ── */
+.site-header{background:var(--gd);position:relative;overflow:hidden;}
+.hpat{position:absolute;inset:0;opacity:.07;background-image:repeating-linear-gradient(0deg,transparent,transparent 30px,#fff 30px,#fff 31px),repeating-linear-gradient(90deg,transparent,transparent 30px,#fff 30px,#fff 31px);}
+.hinn{position:relative;z-index:1;text-align:center;padding:28px 24px 20px;}
+.hbism{font-family:'Amiri Quran',serif;font-size:21px;color:var(--goldl);margin-bottom:10px;display:block;opacity:.9;}
+.hdiv{width:110px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0 auto 11px;}
+.htitle{font-family:'Amiri',serif;font-size:26px;font-weight:700;color:#f5edd8;line-height:1.5;margin-bottom:3px;}
+.hsub{font-family:'Amiri',serif;font-size:15px;color:var(--gold);margin-bottom:8px;}
+.htag{font-size:11px;font-weight:300;color:rgba(255,255,255,.4);}
+
+/* ── PAGES ── */
+.page{display:none;animation:fi .3s ease;}
+.page.active{display:block;}
+@keyframes fi{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── CENTER WRAP ── */
+.cwrap{min-height:calc(100vh - 140px);display:flex;align-items:center;justify-content:center;padding:32px 16px;}
+
+/* ── HOME ── */
+.home-card{background:var(--wh);border-radius:22px;border:1px solid var(--brd);padding:40px 30px;width:100%;max-width:460px;box-shadow:var(--shl);text-align:center;}
+.home-card h2{font-family:'Amiri',serif;font-size:22px;color:var(--gd);margin-bottom:6px;}
+.home-card>p{color:var(--ts);font-size:13px;margin-bottom:28px;}
+.role-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.role-btn{padding:24px 12px;border-radius:15px;border:1.5px solid var(--brd);background:var(--cream);cursor:pointer;transition:all .2s;text-align:center;}
+.role-btn:hover{border-color:var(--gl);background:var(--gp);transform:translateY(-2px);box-shadow:var(--sh);}
+.ri{font-size:32px;display:block;margin-bottom:8px;}
+.role-btn strong{display:block;font-size:14px;color:var(--gd);margin-bottom:2px;}
+.role-btn small{font-size:11px;color:var(--ts);}
+
+/* ── LOGIN CARD ── */
+.lcard{background:var(--wh);border-radius:22px;border:1px solid var(--brd);padding:38px 32px;width:100%;max-width:440px;box-shadow:var(--shl);text-align:center;}
+.lic{width:62px;height:62px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:27px;}
+.lic-g{background:var(--gd);}
+.lic-b{background:var(--bd);}
+.lcard h2{font-family:'Amiri',serif;font-size:20px;color:var(--gd);margin-bottom:5px;}
+.lcard>p{color:var(--ts);font-size:13px;margin-bottom:24px;}
+
+/* ── FORMS ── */
+.fg{margin-bottom:15px;text-align:right;}
+.fg label{display:block;font-size:12px;font-weight:600;color:var(--tm);margin-bottom:5px;}
+.req{color:var(--gold);}
+input[type=text],input[type=password],input[type=number],input[type=date],select,textarea{
+  width:100%;padding:10px 13px;border:1.5px solid var(--brd);border-radius:10px;
+  font-family:'Cairo',sans-serif;font-size:13px;color:var(--td);
+  background:var(--cream);outline:none;transition:border-color .2s,background .2s;direction:rtl;}
+input:focus,select:focus,textarea:focus{border-color:var(--gl);background:var(--wh);box-shadow:0 0 0 3px rgba(30,122,72,.09);}
+select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23888' d='M6 8L1 3h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:left 12px center;padding-left:32px;}
+textarea{resize:vertical;min-height:78px;line-height:1.7;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;}
+.g4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;}
+@media(max-width:580px){.g2,.g3{grid-template-columns:1fr 1fr;}.g4{grid-template-columns:1fr 1fr;}}
+@media(max-width:380px){.g2,.g3,.g4{grid-template-columns:1fr;}}
+
+/* toggle / checkbox row */
+.toggle-row{display:flex;align-items:center;gap:10px;padding:10px 13px;background:var(--cream);border:1.5px solid var(--brd);border-radius:10px;cursor:pointer;transition:border-color .2s;}
+.toggle-row:hover{border-color:var(--gl);}
+.toggle-row input[type=checkbox]{width:16px;height:16px;accent-color:var(--gd);cursor:pointer;flex-shrink:0;}
+.toggle-row span{font-size:13px;color:var(--tm);font-weight:500;}
+
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 20px;border-radius:10px;font-family:'Cairo',sans-serif;font-size:13px;font-weight:600;cursor:pointer;border:none;transition:all .2s;}
+.bw{width:100%;}
+.bp{background:var(--gd);color:#fff;}
+.bp:hover{background:var(--gm);transform:translateY(-1px);box-shadow:0 4px 13px rgba(13,51,32,.23);}
+.bb{background:var(--bd);color:#fff;}
+.bb:hover{background:#0d2a50;transform:translateY(-1px);}
+.bo{background:transparent;border:1.5px solid var(--brd);color:var(--tm);font-size:12px;padding:7px 14px;}
+.bo:hover{border-color:var(--gl);color:var(--gd);}
+.bda{background:var(--red);color:#fff;font-size:11px;padding:5px 12px;border-radius:7px;}
+.bda:hover{background:#a93226;}
+.bed{background:#1a5c8a;color:#fff;font-size:11px;padding:5px 12px;border-radius:7px;}
+.bed:hover{background:#144a70;}
+.mt8{margin-top:8px;}
+
+/* ── PAGE NAV ── */
+.pnav{background:var(--wh);border-bottom:1px solid var(--brd);padding:11px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:9px;position:sticky;top:0;z-index:100;}
+.ni{display:flex;align-items:center;gap:10px;}
+.nav-av{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;flex-shrink:0;}
+.nav-avg{background:var(--gd);color:var(--goldl);font-family:'Amiri',serif;}
+.nav-avb{background:var(--bd);}
+.nt strong{display:block;font-size:13px;color:var(--td);}
+.nt span{font-size:11px;color:var(--gl);font-weight:600;}
+.nbtns{display:flex;gap:6px;flex-wrap:wrap;}
+
+/* ── CONTENT ── */
+.pc{max-width:960px;margin:0 auto;padding:18px 14px 60px;}
+.stitle{font-family:'Amiri',serif;font-size:17px;color:var(--gd);margin-bottom:12px;display:flex;align-items:center;gap:9px;}
+.stitle::after{content:'';flex:1;height:1px;background:var(--brd);}
+.card{background:var(--wh);border-radius:16px;border:1px solid var(--brd);padding:20px;box-shadow:var(--sh);}
+.mb20{margin-bottom:20px;}
+
+/* ── STATS ── */
+.sbar{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:9px;margin-bottom:20px;}
+.sc{background:var(--wh);border-radius:11px;border:1px solid var(--brd);padding:12px;text-align:center;}
+.snum{font-family:'Amiri',serif;font-size:24px;font-weight:700;color:var(--gd);line-height:1;margin-bottom:2px;}
+.slbl{font-size:10px;color:var(--ts);font-weight:500;}
+
+/* ── AUTOCOMPLETE ── */
+.acw{position:relative;}
+.acl{position:absolute;top:100%;right:0;left:0;background:var(--wh);border:1.5px solid var(--gl);border-radius:10px;box-shadow:var(--shl);z-index:200;max-height:200px;overflow-y:auto;margin-top:3px;display:none;}
+.aci{padding:9px 13px;cursor:pointer;font-size:13px;display:flex;align-items:center;gap:9px;transition:background .12s;border-bottom:1px solid var(--brd);}
+.aci:last-child{border-bottom:none;}
+.aci:hover{background:var(--gp);color:var(--gd);}
+.aca{width:26px;height:26px;background:var(--gd);border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;font-weight:700;flex-shrink:0;}
+
+/* ── SESSION RECORDS ── */
+.rcon{display:flex;flex-direction:column;gap:10px;}
+.srec{background:var(--wh);border-radius:14px;border:1px solid var(--brd);overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.04);}
+.srec:hover{box-shadow:var(--sh);}
+.rhead{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:var(--gp);border-bottom:1px solid var(--brd);flex-wrap:wrap;gap:7px;}
+.rnw{display:flex;align-items:center;gap:9px;}
+.sav{width:34px;height:34px;background:var(--gd);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:700;flex-shrink:0;}
+.snm strong{font-size:13px;color:var(--gd);display:block;}
+.snm small{font-size:10px;color:var(--ts);}
+.rbgs{display:flex;gap:5px;flex-wrap:wrap;align-items:center;}
+.badge{padding:2px 9px;border-radius:20px;font-size:10px;font-weight:600;white-space:nowrap;}
+.bg{background:var(--gp);color:var(--gd);border:1px solid #b8dfc8;}
+.bb2{background:var(--bl);color:#1a3a6b;border:1px solid #b8ccf0;}
+.dtag{font-size:10px;color:var(--ts);background:var(--creamd);padding:2px 8px;border-radius:20px;border:1px solid var(--brd);}
+.rbody{padding:13px 16px;display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+@media(max-width:460px){.rbody{grid-template-columns:1fr;}}
+.rf label{font-size:9px;font-weight:700;color:var(--ts);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;display:block;}
+.rf p{font-size:12px;color:var(--td);line-height:1.6;}
+.rf.full{grid-column:1/-1;}
+.ract{padding:8px 16px;background:#f9f7f3;border-top:1px solid var(--brd);display:flex;gap:6px;justify-content:flex-end;}
+
+/* ── EMPTY ── */
+.es{text-align:center;padding:40px 16px;color:var(--ts);}
+.es .ei{font-size:40px;margin-bottom:8px;opacity:.4;}
+.es p{font-size:13px;}
+
+/* ── FILTER ── */
+.fbar{display:flex;gap:9px;margin-bottom:14px;}
+.fbar input{flex:1;padding:8px 12px;font-size:12px;}
+
+/* ── MOD TABS ── */
+.mtabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px;}
+.mtab{padding:7px 14px;border-radius:20px;border:1.5px solid var(--brd);background:var(--cream);font-size:12px;font-weight:600;cursor:pointer;color:var(--tm);transition:all .2s;}
+.mtab:hover{border-color:var(--gl);color:var(--gd);}
+.mtab.active{background:var(--gd);color:#fff;border-color:var(--gd);}
+
+/* ── STUDENT PROFILE CARDS ── */
+.stu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:13px;margin-bottom:18px;}
+.stu-card{background:var(--wh);border:1px solid var(--brd);border-radius:14px;overflow:hidden;transition:box-shadow .2s;}
+.stu-card:hover{box-shadow:var(--sh);}
+.sc-head{padding:13px 15px;display:flex;align-items:center;gap:11px;border-bottom:1px solid var(--brd);}
+.sc-av{width:42px;height:42px;background:var(--gd);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;font-weight:700;flex-shrink:0;}
+.sc-info{flex:1;min-width:0;}
+.sc-name{font-size:14px;font-weight:700;color:var(--gd);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.sc-course{font-size:11px;color:var(--ts);margin-top:1px;}
+.sc-body{padding:11px 15px;display:flex;flex-direction:column;gap:7px;}
+.sc-row{display:flex;justify-content:space-between;align-items:center;font-size:12px;}
+.sc-row .lbl{color:var(--ts);font-weight:500;}
+.sc-row .val{color:var(--td);font-weight:600;text-align:left;}
+.sc-pills{display:flex;gap:5px;flex-wrap:wrap;padding:0 15px 11px;}
+.pill{padding:3px 9px;border-radius:20px;font-size:10px;font-weight:700;}
+.pill-exempt{background:#e8f5ee;color:#0d5c1f;border:1px solid #b8e0c5;}
+.pill-paid{background:#e8f5ee;color:#0d5c1f;border:1px solid #b8e0c5;}
+.pill-partial{background:#fef9ec;color:#7a5010;border:1px solid #f0d080;}
+.pill-due{background:#fdecea;color:#7a1010;border:1px solid #f0c0c0;}
+.pill-bus{background:#e8f0fb;color:#1a3a6b;border:1px solid #b8ccf0;}
+.pill-nobus{background:#f5f5f5;color:#555;border:1px solid #ddd;}
+.sc-foot{padding:9px 15px;border-top:1px solid var(--brd);background:#f9f7f3;display:flex;gap:6px;justify-content:flex-end;}
+.pay-bar-wrap{padding:0 15px 11px;}
+.pay-bar-bg{background:#e8e0d4;border-radius:20px;height:6px;overflow:hidden;}
+.pay-bar-fill{height:6px;border-radius:20px;background:var(--gd);transition:width .4s;}
+
+/* ── MOD: ADD ROW ── */
+.mod-add-btn-row{margin-bottom:18px;}
+
+/* ── MODALS ── */
+.mover{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:1000;align-items:center;justify-content:center;padding:16px;overflow-y:auto;}
+.mover.open{display:flex;}
+.mbox{background:var(--wh);border-radius:18px;padding:26px;max-width:400px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.22);text-align:center;margin:auto;}
+.mbox h3{font-family:'Amiri',serif;font-size:18px;color:var(--gd);margin-bottom:6px;}
+.mbox p{font-size:12px;color:var(--ts);margin-bottom:18px;}
+.mbtns{display:flex;gap:9px;justify-content:center;}
+.emod{background:var(--wh);border-radius:18px;padding:26px;max-width:600px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.25);margin:auto;}
+.emod h3{font-family:'Amiri',serif;font-size:17px;color:var(--gd);margin-bottom:15px;}
+.ebtns{display:flex;gap:9px;justify-content:flex-end;margin-top:15px;flex-wrap:wrap;}
+.payment-section{background:var(--cream);border-radius:10px;padding:13px;margin-top:8px;border:1px solid var(--brd);}
+.payment-section.hidden{display:none;}
+
+/* ── TOAST ── */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--gd);color:#fff;padding:9px 20px;border-radius:10px;font-size:12px;font-weight:500;z-index:2000;transition:transform .3s;white-space:nowrap;}
+.toast.show{transform:translateX(-50%) translateY(0);}
+
+input[readonly]{background:var(--creamd)!important;cursor:not-allowed;}
+@media print{.pnav,.card,.fbar,.ract,.btn,.add-form-card{display:none!important;}body{background:#fff;}.srec{break-inside:avoid;box-shadow:none;border:1px solid #ccc;margin-bottom:9px;}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="hpat"></div>
+  <div class="hinn">
+    <span class="hbism">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</span>
+    <div class="hdiv"></div>
+    <h1 class="htitle">دار الكتاب المبين</h1>
+    <p class="hsub">فرع الشيخ رشيد الحجار</p>
+    <p class="htag">نظام متابعة حلقات التلاوة والحفظ</p>
+  </div>
+</header>
+
+<!-- HOME -->
+<div id="page-home" class="page active">
+  <div class="cwrap">
+    <div class="home-card">
+      <div style="font-size:44px;margin-bottom:13px;">📖</div>
+      <h2>أهلاً وسهلاً</h2>
+      <p>اختر دورك للمتابعة</p>
+      <div class="role-grid">
+        <div class="role-btn" onclick="showPage('page-teacher-login')">
+          <span class="ri">👨‍🏫</span><strong>أستاذ</strong><small>تسجيل جلسات السماع</small>
+        </div>
+        <div class="role-btn" onclick="showPage('page-mod-login')">
+          <span class="ri">🛡️</span><strong>مشرف</strong><small>إدارة الطلاب والحلقات</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TEACHER LOGIN -->
+<div id="page-teacher-login" class="page">
+  <div class="cwrap">
+    <div class="lcard">
+      <div class="lic lic-g">👨‍🏫</div>
+      <h2>دخول الأستاذ</h2>
+      <p>أدخل اسمك واختر حلقتك</p>
+      <div class="fg"><label>اسم الأستاذ <span class="req">*</span></label>
+        <input type="text" id="t-name" placeholder="مثال: الأستاذ أحمد السيد" onkeydown="if(event.key==='Enter')doTeacherLogin()"/></div>
+      <div class="fg"><label>الحلقة <span class="req">*</span></label>
+        <select id="t-halqa">
+          <option value="">— اختر الحلقة —</option>
+          <option>براعم</option><option>عم صغار</option><option>عم كبار</option>
+          <option>تبارك قد سمع و الذاريات</option><option>الختمة</option>
+          <option>التاج</option><option>امهات و آباء</option>
+        </select></div>
+      <button class="btn bp bw" onclick="doTeacherLogin()">دخول ←</button>
+      <button class="btn bo bw mt8" onclick="showPage('page-home')">← رجوع</button>
+    </div>
+  </div>
+</div>
+
+<!-- MOD LOGIN -->
+<div id="page-mod-login" class="page">
+  <div class="cwrap">
+    <div class="lcard">
+      <div class="lic lic-b">🛡️</div>
+      <h2>دخول المشرف</h2>
+      <p>أدخل كلمة السر للوصول إلى لوحة الإدارة</p>
+      <div class="fg"><label>كلمة السر <span class="req">*</span></label>
+        <input type="password" id="mod-pass" placeholder="••••••••" onkeydown="if(event.key==='Enter')doModLogin()"/></div>
+      <button class="btn bb bw" onclick="doModLogin()">دخول ←</button>
+      <button class="btn bo bw mt8" onclick="showPage('page-home')">← رجوع</button>
+      <p style="margin-top:12px;font-size:11px;color:var(--ts);">كلمة السر الافتراضية: <strong>1234</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- TEACHER HALQA PAGE -->
+<div id="page-halqa" class="page">
+  <div class="pnav">
+    <div class="ni">
+      <div class="nav-av nav-avg" id="t-av">أ</div>
+      <div class="nt"><strong id="t-dname">—</strong><span id="t-dhalqa">—</span></div>
+    </div>
+    <div class="nbtns">
+      <button class="btn bo" onclick="window.print()">🖨 طباعة</button>
+      <button class="btn bo" onclick="showPage('page-home')">← خروج</button>
+    </div>
+  </div>
+  <div class="pc">
+    <div class="sbar">
+      <div class="sc"><div class="snum" id="st-students">0</div><div class="slbl">طالب</div></div>
+      <div class="sc"><div class="snum" id="st-pages">0</div><div class="slbl">صفحات</div></div>
+      <div class="sc"><div class="snum" id="st-sessions">0</div><div class="slbl">جلسة</div></div>
+    </div>
+
+    <div class="stitle">✍️ تسجيل جلسة جديدة</div>
+    <div class="card mb20 add-form-card">
+      <div class="fg">
+        <label>ابحث عن الطالب <span class="req">*</span></label>
+        <div class="acw">
+          <input type="text" id="f-stu-s" placeholder="اكتب اسم الطالب..." autocomplete="off" oninput="onStuSearch()" onfocus="onStuSearch()"/>
+          <div class="acl" id="acl"></div>
+        </div>
+        <input type="hidden" id="f-stu-v"/>
+      </div>
+      <div class="g2">
+        <div class="fg"><label>السورة</label><input type="text" id="f-surah" placeholder="مثال: البقرة"/></div>
+        <div class="fg"><label>ماذا سمع / الحزب</label><input type="text" id="f-samea" placeholder="مثال: الحزب الأول..."/></div>
+      </div>
+      <div class="g4">
+        <div class="fg"><label>من آية</label><input type="text" id="f-af" placeholder="١"/></div>
+        <div class="fg"><label>إلى آية</label><input type="text" id="f-at" placeholder="٢٠"/></div>
+        <div class="fg"><label>من صفحة</label><input type="text" id="f-pf" placeholder="١"/></div>
+        <div class="fg"><label>إلى صفحة</label><input type="text" id="f-pt" placeholder="٣"/></div>
+      </div>
+      <div class="fg"><label>الملاحظات</label><textarea id="f-notes" placeholder="أي ملاحظات على التلاوة..."></textarea></div>
+      <button class="btn bp" style="max-width:180px;" onclick="addRecord()">✅ حفظ الجلسة</button>
+    </div>
+
+    <div class="fbar">
+      <input type="text" id="srch" placeholder="🔍 ابحث في السجلات..." oninput="renderRecords()"/>
+    </div>
+    <div class="stitle">📋 سجلات الحلقة</div>
+    <div class="rcon" id="rcon"></div>
+  </div>
+</div>
+
+<!-- MODERATOR PAGE -->
+<div id="page-mod" class="page">
+  <div class="pnav">
+    <div class="ni">
+      <div class="nav-av nav-avb">🛡️</div>
+      <div class="nt"><strong>لوحة المشرف</strong><span>إدارة الطلاب والحلقات</span></div>
+    </div>
+    <button class="btn bo" onclick="showPage('page-home')">← خروج</button>
+  </div>
+  <div class="pc">
+    <div class="stitle">🎓 اختر الحلقة</div>
+    <div class="mtabs" id="mod-tabs"></div>
+    <div class="card" id="mod-panel">
+      <div class="es"><div class="ei">👆</div><p>اختر حلقة من الأعلى</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: ADD/EDIT STUDENT (MOD) -->
+<div class="mover" id="modal-stu-form">
+  <div class="emod">
+    <h3 id="stu-form-title">➕ إضافة طالب جديد</h3>
+    <input type="hidden" id="sf-id"/>
+    <div class="g2">
+      <div class="fg"><label>الاسم الكامل <span class="req">*</span></label><input type="text" id="sf-name" placeholder="مثال: محمد أحمد السيد"/></div>
+      <div class="fg"><label>تاريخ الميلاد</label><input type="date" id="sf-dob"/></div>
+    </div>
+    <div class="g2">
+      <div class="fg"><label>رقم الهاتف</label><input type="text" id="sf-phone" placeholder="مثال: 03xxxxxxx"/></div>
+      <div class="fg"><label>اسم الدورة</label><input type="text" id="sf-course" placeholder="مثال: دورة الصيف 2025"/></div>
+    </div>
+
+    <!-- Bus -->
+    <div class="fg">
+      <label>الباص</label>
+      <label class="toggle-row">
+        <input type="checkbox" id="sf-bus"/>
+        <span>🚌 مشترك في الباص</span>
+      </label>
+    </div>
+
+    <!-- Payment -->
+    <div class="fg">
+      <label>الدفع</label>
+      <label class="toggle-row" style="margin-bottom:8px;">
+        <input type="checkbox" id="sf-exempt" onchange="togglePayment()"/>
+        <span>🎁 معفى من الدفع</span>
+      </label>
+      <div class="payment-section" id="pay-section">
+        <div class="g2">
+          <div class="fg" style="margin-bottom:0;"><label>المبلغ الكلي (ل.ل / $)</label><input type="text" id="sf-total" placeholder="مثال: 500000"/></div>
+          <div class="fg" style="margin-bottom:0;"><label>المبلغ المدفوع</label><input type="text" id="sf-paid" placeholder="مثال: 250000" oninput="calcRemaining()"/></div>
+        </div>
+        <div class="fg" style="margin-top:10px;margin-bottom:0;"><label>العملة</label>
+          <select id="sf-currency">
+            <option value="ل.ل">ل.ل (ليرة لبنانية)</option>
+            <option value="$">$ (دولار)</option>
+          </select>
+        </div>
+        <div style="margin-top:10px;padding:8px 10px;background:var(--wh);border-radius:8px;border:1px solid var(--brd);font-size:12px;display:flex;justify-content:space-between;align-items:center;">
+          <span style="color:var(--ts);">المبلغ الباقي:</span>
+          <strong id="sf-remaining" style="color:var(--red);font-size:14px;">—</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="ebtns">
+      <button class="btn bo" onclick="closeStuForm()">إلغاء</button>
+      <button class="btn bp" style="width:auto;padding:9px 22px;" onclick="saveStuForm()">💾 حفظ</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: EDIT SESSION RECORD -->
+<div class="mover" id="modal-edit">
+  <div class="emod">
+    <h3>✏️ تعديل الجلسة</h3>
+    <input type="hidden" id="edit-id"/>
+    <div class="fg"><label>الطالب</label><input type="text" id="edit-student" readonly/></div>
+    <div class="g2">
+      <div class="fg"><label>السورة</label><input type="text" id="edit-surah"/></div>
+      <div class="fg"><label>ماذا سمع</label><input type="text" id="edit-samea"/></div>
+    </div>
+    <div class="g4">
+      <div class="fg"><label>من آية</label><input type="text" id="edit-af"/></div>
+      <div class="fg"><label>إلى آية</label><input type="text" id="edit-at"/></div>
+      <div class="fg"><label>من صفحة</label><input type="text" id="edit-pf"/></div>
+      <div class="fg"><label>إلى صفحة</label><input type="text" id="edit-pt"/></div>
+    </div>
+    <div class="fg"><label>الملاحظات</label><textarea id="edit-notes"></textarea></div>
+    <div class="ebtns">
+      <button class="btn bo" onclick="closeM('modal-edit')">إلغاء</button>
+      <button class="btn bp" style="width:auto;padding:9px 22px;" onclick="saveEdit()">💾 حفظ</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: CONFIRM DELETE SESSION -->
+<div class="mover" id="modal-del-rec">
+  <div class="mbox">
+    <h3>⚠️ تأكيد الحذف</h3>
+    <p>هل أنت متأكد من حذف هذا السجل؟</p>
+    <div class="mbtns">
+      <button class="btn bda" onclick="confirmDelRec()">نعم، احذف</button>
+      <button class="btn bo" onclick="closeM('modal-del-rec')">إلغاء</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: CONFIRM DELETE STUDENT -->
+<div class="mover" id="modal-del-stu">
+  <div class="mbox">
+    <h3>🗑 حذف الطالب</h3>
+    <p id="del-stu-msg">هل تريد حذف هذا الطالب؟</p>
+    <div class="mbtns">
+      <button class="btn bda" onclick="confirmDelStu()">نعم، احذف</button>
+      <button class="btn bo" onclick="closeM('modal-del-stu')">إلغاء</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ═══════════════════════════════
+//  CONSTANTS & STORAGE
+// ═══════════════════════════════
+const HALQAS=['براعم','عم صغار','عم كبار','تبارك قد سمع و الذاريات','الختمة','التاج','امهات و آباء'];
+const ICONS={'براعم':'🌱','عم صغار':'📗','عم كبار':'📘','تبارك قد سمع و الذاريات':'📙','الختمة':'🏆','التاج':'👑','امهات و آباء':'🤍'};
+const MOD_PASS='1234';
+const REC_KEY='dkm3_rec';   // {halqa:[records]}
+const STU_KEY='dkm3_stu';   // {halqa:[studentProfiles]}
+
+function lsG(k){try{return JSON.parse(localStorage.getItem(k)||'{}')}catch{return{}}}
+function lsS(k,v){localStorage.setItem(k,JSON.stringify(v))}
+function getRecs(h){return lsG(REC_KEY)[h]||[]}
+function setRecs(h,a){const d=lsG(REC_KEY);d[h]=a;lsS(REC_KEY,d)}
+function getStus(h){return lsG(STU_KEY)[h]||[]}  // array of profile objects
+function setStus(h,a){const d=lsG(STU_KEY);d[h]=a;lsS(STU_KEY,d)}
+
+// ═══════════════════════════════
+//  NAV
+// ═══════════════════════════════
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  const ac=document.getElementById('acl');if(ac)ac.style.display='none';
+}
+
+// ═══════════════════════════════
+//  TEACHER LOGIN
+// ═══════════════════════════════
+let cT='',cH='';
+function doTeacherLogin(){
+  const n=document.getElementById('t-name').value.trim();
+  const h=document.getElementById('t-halqa').value;
+  if(!n){toast('الرجاء إدخال اسم الأستاذ');return;}
+  if(!h){toast('الرجاء اختيار الحلقة');return;}
+  cT=n;cH=h;
+  document.getElementById('t-dname').textContent=n;
+  document.getElementById('t-dhalqa').textContent='حلقة: '+h;
+  document.getElementById('t-av').textContent=n.replace(/الأستاذ|الأستاذة|\s+/g,'').slice(0,2)||'أ';
+  showPage('page-halqa');renderRecords();
+}
+
+// ═══════════════════════════════
+//  AUTOCOMPLETE
+// ═══════════════════════════════
+function onStuSearch(){
+  const q=document.getElementById('f-stu-s').value.trim().toLowerCase();
+  const stus=getStus(cH);
+  const acl=document.getElementById('acl');
+  document.getElementById('f-stu-v').value='';
+  const fil=q?stus.filter(s=>s.name.toLowerCase().includes(q)):stus;
+  if(!fil.length){acl.style.display='none';return;}
+  acl.innerHTML=fil.map(s=>{
+    const av=s.name.replace(/\s+/g,'').slice(0,2)||'؟';
+    return`<div class="aci" onmousedown="selStu('${escJ(s.name)}')"><div class="aca">${av}</div>${escH(s.name)}</div>`;
+  }).join('');
+  acl.style.display='block';
+}
+function selStu(n){
+  document.getElementById('f-stu-s').value=n;
+  document.getElementById('f-stu-v').value=n;
+  document.getElementById('acl').style.display='none';
+}
+document.addEventListener('click',e=>{
+  const w=document.querySelector('.acw');
+  if(w&&!w.contains(e.target))document.getElementById('acl').style.display='none';
+});
+
+// ═══════════════════════════════
+//  ADD SESSION RECORD
+// ═══════════════════════════════
+function addRecord(){
+  const stu=document.getElementById('f-stu-v').value||document.getElementById('f-stu-s').value.trim();
+  if(!stu){toast('الرجاء اختيار الطالب من القائمة');return;}
+  const rec={
+    id:Date.now().toString(),student:stu,
+    surah:v('f-surah'),samea:v('f-samea'),
+    ayahFrom:v('f-af'),ayahTo:v('f-at'),
+    pageFrom:v('f-pf'),pageTo:v('f-pt'),
+    notes:v('f-notes'),teacher:cT,
+    date:new Date().toLocaleDateString('ar-LB',{year:'numeric',month:'long',day:'numeric'}),
+    ts:Date.now()
+  };
+  const recs=getRecs(cH);recs.unshift(rec);setRecs(cH,recs);
+  ['f-stu-s','f-stu-v','f-surah','f-samea','f-af','f-at','f-pf','f-pt','f-notes'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='';});
+  document.getElementById('acl').style.display='none';
+  renderRecords();toast('✓ تم حفظ الجلسة');
+}
+
+// ═══════════════════════════════
+//  RENDER SESSION RECORDS
+// ═══════════════════════════════
+function renderRecords(){
+  const recs=getRecs(cH);
+  const q=(document.getElementById('srch')?.value||'').toLowerCase();
+  const fil=q?recs.filter(r=>r.student.toLowerCase().includes(q)||(r.surah||'').toLowerCase().includes(q)):recs;
+  let pg=0;recs.forEach(r=>{if(r.pageFrom&&r.pageTo){const d=parseInt(r.pageTo)-parseInt(r.pageFrom);if(!isNaN(d))pg+=d+1;}});
+  document.getElementById('st-students').textContent=[...new Set(recs.map(r=>r.student))].length;
+  document.getElementById('st-pages').textContent=pg;
+  document.getElementById('st-sessions').textContent=recs.length;
+  const con=document.getElementById('rcon');
+  if(!fil.length){con.innerHTML=`<div class="es"><div class="ei">📭</div><p>${q?'لا توجد نتائج':'لا توجد سجلات بعد'}</p></div>`;return;}
+  con.innerHTML=fil.map(r=>{
+    const av=r.student.replace(/\s+/g,'').slice(0,2)||'؟';
+    const at=mkRange(r.ayahFrom,r.ayahTo,'آية');
+    const pt=mkRange(r.pageFrom,r.pageTo,'ص');
+    return`<div class="srec">
+      <div class="rhead">
+        <div class="rnw"><div class="sav">${av}</div><div class="snm"><strong>${escH(r.student)}</strong><small>${r.date||''}</small></div></div>
+        <div class="rbgs">
+          ${r.surah?`<span class="badge bg">${escH(r.surah)}</span>`:''}
+          ${r.samea?`<span class="badge bb2">${escH(r.samea)}</span>`:''}
+          <span class="dtag">👤 ${escH(r.teacher)}</span>
+        </div>
+      </div>
+      <div class="rbody">
+        <div class="rf"><label>الآيات</label><p>${at}</p></div>
+        <div class="rf"><label>الصفحات</label><p>${pt}</p></div>
+        ${r.notes?`<div class="rf full"><label>الملاحظات</label><p>${escH(r.notes)}</p></div>`:''}
+      </div>
+      <div class="ract">
+        <button class="btn bed" onclick="openEditRec('${r.id}')">✏️ تعديل</button>
+        <button class="btn bda" onclick="askDelRec('${r.id}')">🗑 حذف</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+function mkRange(a,b,unit){
+  if(a&&b)return`من ${unit} ${escH(a)} إلى ${unit} ${escH(b)}`;
+  if(a)return`من ${unit} ${escH(a)}`;
+  if(b)return`إلى ${unit} ${escH(b)}`;
+  return'—';
+}
+
+// ═══════════════════════════════
+//  EDIT SESSION
+// ═══════════════════════════════
+function openEditRec(id){
+  const r=getRecs(cH).find(x=>x.id===id);if(!r)return;
+  sv('edit-id',id);sv('edit-student',r.student||'');sv('edit-surah',r.surah||'');
+  sv('edit-samea',r.samea||'');sv('edit-af',r.ayahFrom||'');sv('edit-at',r.ayahTo||'');
+  sv('edit-pf',r.pageFrom||'');sv('edit-pt',r.pageTo||'');sv('edit-notes',r.notes||'');
+  openM('modal-edit');
+}
+function saveEdit(){
+  const id=v('edit-id');
+  let recs=getRecs(cH).map(r=>r.id!==id?r:{...r,surah:v('edit-surah'),samea:v('edit-samea'),
+    ayahFrom:v('edit-af'),ayahTo:v('edit-at'),pageFrom:v('edit-pf'),pageTo:v('edit-pt'),notes:v('edit-notes')});
+  setRecs(cH,recs);closeM('modal-edit');renderRecords();toast('✓ تم حفظ التعديلات');
+}
+
+// ═══════════════════════════════
+//  DELETE SESSION
+// ═══════════════════════════════
+let dRecId=null;
+function askDelRec(id){dRecId=id;openM('modal-del-rec');}
+function confirmDelRec(){
+  if(!dRecId)return;
+  setRecs(cH,getRecs(cH).filter(r=>r.id!==dRecId));
+  dRecId=null;closeM('modal-del-rec');renderRecords();toast('تم حذف السجل');
+}
+
+// ═══════════════════════════════
+//  MOD LOGIN
+// ═══════════════════════════════
+function doModLogin(){
+  const p=document.getElementById('mod-pass').value;
+  if(p!==MOD_PASS){toast('كلمة السر غير صحيحة');return;}
+  document.getElementById('mod-pass').value='';
+  cModH=null;showPage('page-mod');renderModTabs();
+}
+
+// ═══════════════════════════════
+//  MOD TABS
+// ═══════════════════════════════
+let cModH=null;
+function renderModTabs(){
+  document.getElementById('mod-tabs').innerHTML=HALQAS.map(h=>
+    `<div class="mtab ${cModH===h?'active':''}" onclick="selModH('${escJ(h)}')">${ICONS[h]||''} ${h}</div>`
+  ).join('');
+  if(cModH)renderModPanel();
+}
+function selModH(h){cModH=h;renderModTabs();}
+
+// ═══════════════════════════════
+//  MOD PANEL (student list)
+// ═══════════════════════════════
+function renderModPanel(){
+  const stus=getStus(cModH);
+  const icon=ICONS[cModH]||'';
+  // calc stats
+  let totalPaid=0,totalDue=0,busCount=0;
+  stus.forEach(s=>{
+    if(!s.exempt){
+      const tot=parseFloat(s.total)||0;
+      const paid=parseFloat(s.paid)||0;
+      totalPaid+=paid;totalDue+=(tot-paid);
+    }
+    if(s.bus)busCount++;
+  });
+
+  document.getElementById('mod-panel').innerHTML=`
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px;">
+      <h3 style="font-family:'Amiri',serif;font-size:16px;color:var(--gd);">${icon} حلقة ${escH(cModH)}</h3>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;">
+        <span class="badge bg">${stus.length} طالب</span>
+        <span class="badge bb2">🚌 ${busCount} مشترك</span>
+      </div>
+    </div>
+
+    <!-- mini stats -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:9px;margin-bottom:16px;">
+      <div style="background:var(--emeraldl);border:1px solid #b8e0c5;border-radius:10px;padding:10px 13px;">
+        <div style="font-size:10px;color:var(--ts);font-weight:600;margin-bottom:3px;">إجمالي المدفوع</div>
+        <div style="font-size:16px;font-weight:700;color:var(--emerald);">${fmt(totalPaid)}</div>
+      </div>
+      <div style="background:var(--redl);border:1px solid #f0c0c0;border-radius:10px;padding:10px 13px;">
+        <div style="font-size:10px;color:var(--ts);font-weight:600;margin-bottom:3px;">إجمالي المتبقي</div>
+        <div style="font-size:16px;font-weight:700;color:var(--red);">${fmt(totalDue)}</div>
+      </div>
+      <div style="background:var(--bl);border:1px solid #b8ccf0;border-radius:10px;padding:10px 13px;">
+        <div style="font-size:10px;color:var(--ts);font-weight:600;margin-bottom:3px;">مشتركو الباص</div>
+        <div style="font-size:16px;font-weight:700;color:var(--bd);">${busCount}</div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:9px;align-items:center;margin-bottom:14px;flex-wrap:wrap;">
+      <input type="text" id="mod-search" placeholder="🔍 ابحث باسم الطالب أو الدورة..."
+        style="flex:1;min-width:160px;padding:9px 13px;font-size:13px;"
+        oninput="renderStuGrid()" />
+      <button class="btn bp" onclick="openStuForm(null)">➕ إضافة طالب</button>
+    </div>
+    <div id="stu-grid-wrap">
+      ${stus.length===0
+        ?`<div class="es"><div class="ei">🎓</div><p>لا يوجد طلاب في هذه الحلقة بعد</p></div>`
+        :`<div class="stu-grid">${stus.map(s=>stuCard(s)).join('')}</div>`
+      }
+    </div>
+  `;
+}
+
+function renderStuGrid(){
+  const wrap=document.getElementById('stu-grid-wrap');
+  if(!wrap||!cModH)return;
+  const q=(document.getElementById('mod-search')?.value||'').toLowerCase().trim();
+  const stus=getStus(cModH);
+  const fil=q?stus.filter(s=>s.name.toLowerCase().includes(q)||(s.course||'').toLowerCase().includes(q)||(s.phone||'').includes(q)):stus;
+  if(!fil.length){
+    wrap.innerHTML=`<div class="es"><div class="ei">🔍</div><p>${q?'لا توجد نتائج لهذا البحث':'لا يوجد طلاب في هذه الحلقة بعد'}</p></div>`;
+    return;
+  }
+  wrap.innerHTML=`<div class="stu-grid">${fil.map(s=>stuCard(s)).join('')}</div>`;
+}
+
+function stuCard(s){
+  const av=s.name.replace(/\s+/g,'').slice(0,2)||'؟';
+  const tot=parseFloat(s.total)||0;
+  const paid=parseFloat(s.paid)||0;
+  const rem=tot-paid;
+  const pct=tot>0?Math.min(100,Math.round(paid/tot*100)):0;
+  const cur=s.currency||'';
+
+  let payPill='';
+  let payRows='';
+  let payBar='';
+
+  if(s.exempt){
+    payPill=`<span class="pill pill-exempt">🎁 معفى من الدفع</span>`;
+  } else {
+    if(rem<=0){
+      payPill=`<span class="pill pill-paid">✅ مكتمل الدفع</span>`;
+    } else if(paid>0){
+      payPill=`<span class="pill pill-partial">⏳ دفع جزئي</span>`;
+    } else {
+      payPill=`<span class="pill pill-due">❌ لم يدفع</span>`;
+    }
+    payRows=`
+      <div class="sc-row"><span class="lbl">المدفوع</span><span class="val" style="color:var(--emerald);">${fmt(paid)} ${cur}</span></div>
+      <div class="sc-row"><span class="lbl">المتبقي</span><span class="val" style="color:${rem>0?'var(--red)':'var(--emerald)'};">${fmt(rem<=0?0:rem)} ${cur}</span></div>`;
+    payBar=`<div class="pay-bar-wrap">
+      <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--ts);margin-bottom:3px;">
+        <span>نسبة الدفع</span><span>${pct}%</span>
+      </div>
+      <div class="pay-bar-bg"><div class="pay-bar-fill" style="width:${pct}%;background:${pct>=100?'var(--gl)':pct>50?'var(--gold)':'var(--red)'};"></div></div>
+    </div>`;
+  }
+
+  const busPill=s.bus
+    ?`<span class="pill pill-bus">🚌 مع الباص</span>`
+    :`<span class="pill pill-nobus">🚶 بدون باص</span>`;
+
+  const dob=s.dob?`<div class="sc-row"><span class="lbl">تاريخ الميلاد</span><span class="val">${escH(s.dob)}</span></div>`:'';
+  const phone=s.phone?`<div class="sc-row"><span class="lbl">الهاتف</span><span class="val" style="direction:ltr;">${escH(s.phone)}</span></div>`:'';
+  const course=s.course?`<div class="sc-row"><span class="lbl">الدورة</span><span class="val">${escH(s.course)}</span></div>`:'';
+
+  return`<div class="stu-card">
+    <div class="sc-head">
+      <div class="sc-av">${av}</div>
+      <div class="sc-info">
+        <div class="sc-name">${escH(s.name)}</div>
+        <div class="sc-course">${s.course?escH(s.course):'—'}</div>
+      </div>
+    </div>
+    <div class="sc-body">
+      ${dob}${phone}${course}${payRows}
+    </div>
+    ${payBar}
+    <div class="sc-pills">${payPill} ${busPill}</div>
+    <div class="sc-foot">
+      <button class="btn bed" onclick="openStuForm('${escJ(s.id)}')">✏️ تعديل</button>
+      <button class="btn bda" onclick="askDelStu('${escJ(s.id)}')">🗑 حذف</button>
+    </div>
+  </div>`;
+}
+
+// ═══════════════════════════════
+//  STUDENT FORM (ADD / EDIT)
+// ═══════════════════════════════
+let editStuId=null;
+function openStuForm(id){
+  editStuId=id;
+  const isEdit=!!id;
+  document.getElementById('stu-form-title').textContent=isEdit?'✏️ تعديل بيانات الطالب':'➕ إضافة طالب جديد';
+  if(isEdit){
+    const s=getStus(cModH).find(x=>x.id===id);
+    if(!s)return;
+    sv('sf-id',s.id);sv('sf-name',s.name||'');sv('sf-dob',s.dob||'');
+    sv('sf-phone',s.phone||'');sv('sf-course',s.course||'');
+    document.getElementById('sf-bus').checked=!!s.bus;
+    document.getElementById('sf-exempt').checked=!!s.exempt;
+    sv('sf-total',s.total||'');sv('sf-paid',s.paid||'');
+    document.getElementById('sf-currency').value=s.currency||'ل.ل';
+    togglePayment();calcRemaining();
+  } else {
+    ['sf-id','sf-name','sf-dob','sf-phone','sf-course','sf-total','sf-paid'].forEach(i=>sv(i,''));
+    document.getElementById('sf-bus').checked=false;
+    document.getElementById('sf-exempt').checked=false;
+    document.getElementById('sf-currency').value='ل.ل';
+    togglePayment();
+    document.getElementById('sf-remaining').textContent='—';
+  }
+  openM('modal-stu-form');
+}
+function closeStuForm(){closeM('modal-stu-form');editStuId=null;}
+function togglePayment(){
+  const exempt=document.getElementById('sf-exempt').checked;
+  document.getElementById('pay-section').classList.toggle('hidden',exempt);
+}
+function calcRemaining(){
+  const tot=parseFloat(document.getElementById('sf-total').value)||0;
+  const paid=parseFloat(document.getElementById('sf-paid').value)||0;
+  const cur=document.getElementById('sf-currency').value;
+  const rem=tot-paid;
+  const el=document.getElementById('sf-remaining');
+  if(!tot){el.textContent='—';return;}
+  el.textContent=(rem<=0?'مكتمل ✓':fmt(rem)+' '+cur);
+  el.style.color=rem<=0?'var(--gl)':'var(--red)';
+}
+function saveStuForm(){
+  const name=v('sf-name');
+  if(!name){toast('الرجاء إدخال اسم الطالب');return;}
+  const stus=getStus(cModH);
+  const exempt=document.getElementById('sf-exempt').checked;
+  const bus=document.getElementById('sf-bus').checked;
+  const profile={
+    id:editStuId||Date.now().toString(),
+    name,dob:v('sf-dob'),phone:v('sf-phone'),course:v('sf-course'),
+    bus,exempt,
+    total:exempt?'':v('sf-total'),
+    paid:exempt?'':v('sf-paid'),
+    currency:document.getElementById('sf-currency').value,
+  };
+  if(editStuId){
+    const idx=stus.findIndex(s=>s.id===editStuId);
+    if(idx>-1)stus[idx]=profile; else stus.push(profile);
+  } else {
+    if(stus.some(s=>s.name===name)){toast('هذا الطالب موجود مسبقاً');return;}
+    stus.push(profile);
+  }
+  setStus(cModH,stus);closeStuForm();const _q=document.getElementById('mod-search')?.value||'';renderModPanel();if(_q){const si=document.getElementById('mod-search');if(si)si.value=_q;renderStuGrid();}toast('✓ تم الحفظ');
+}
+
+// ═══════════════════════════════
+//  DELETE STUDENT
+// ═══════════════════════════════
+let dStuId=null;
+function askDelStu(id){
+  dStuId=id;
+  const s=getStus(cModH).find(x=>x.id===id);
+  document.getElementById('del-stu-msg').textContent=`هل تريد حذف الطالب "${s?s.name:''}" من حلقة ${cModH}؟`;
+  openM('modal-del-stu');
+}
+function confirmDelStu(){
+  if(!dStuId)return;
+  setStus(cModH,getStus(cModH).filter(s=>s.id!==dStuId));
+  dStuId=null;closeM('modal-del-stu');renderModPanel();toast('تم حذف الطالب');
+}
+
+// ═══════════════════════════════
+//  UTILS
+// ═══════════════════════════════
+function v(id){return document.getElementById(id)?.value.trim()||'';}
+function sv(id,val){const el=document.getElementById(id);if(el)el.value=val;}
+function openM(id){document.getElementById(id).classList.add('open');}
+function closeM(id){document.getElementById(id).classList.remove('open');}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2700);}
+function escH(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function escJ(s){return String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'");}
+function fmt(n){return Number(n).toLocaleString('ar-LB');}
+
+// close on overlay bg click
+['modal-stu-form','modal-edit','modal-del-rec','modal-del-stu'].forEach(id=>{
+  document.getElementById(id).addEventListener('click',function(e){
+    if(e.target===this)closeM(id);
+  });
+});
+</script>
+</body>
+</html>
